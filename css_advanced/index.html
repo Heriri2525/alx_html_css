@@ -3,60 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hermela's Todo List App</title>
+  <title>Hermela Mulugeta Jemema | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div class="container">
-
-    <!-- Header -->
-    <header class="main-header">
-      <div class="header-content">
-        <img src="hermela.jpg" alt="Hermela Mulugeta" class="profile-pic" />
-        <div class="contact-info">
-          <h1>Hermela's Todo List</h1>
-          <p>Frontend Developer & UI Designer</p>
-          <p>📞 +251901209318 | 📧 heriri2525@gmail.com</p>
-        </div>
+    
+    <!-- About Me Section -->
+    <section class="card about-me">
+      <img src="hermela.jpg" alt="Hermela Mulugeta Jemema" class="profile-img" />
+      <div class="text">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm Hermela Mulugeta Jemema, a passionate Software Engineering student at AASTU. I love building user-friendly and scalable web applications.
+          Currently enhancing my skills through the ALX Front-End program, I enjoy solving real-world problems with code.
+        </p>
       </div>
-    </header>
-
-    <!-- Banner -->
-    <section class="banner">
-      <h2>Organize your day efficiently</h2>
-      <p>Track your tasks, mark them complete, and stay productive!</p>
-      <a href="#tasks" class="cta-button">Start Now</a>
     </section>
 
-    <!-- Main Todo App -->
-    <main class="todo-app" id="tasks">
-      <section class="task-input">
-        <input type="text" placeholder="Add a new task..." aria-label="New task" />
-        <button class="add-btn">Add</button>
-      </section>
+    <!-- Projects Section -->
+    <section class="card projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <img src="project1.jpg" alt="Rebel Rover Travel Website" />
+          <h3>Rebel Rover Travel Website</h3>
+          <p>A React-based travel platform using Tailwind CSS and MockAPI.</p>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="AASTU Event Management System" />
+          <h3>AASTU Event Management System</h3>
+          <p>Built for campus event planning and management using React + Django.</p>
+        </div>
+        <div class="project">
+          <img src="project3.jpg" alt="UniBazaar Hackathon App" />
+          <h3>UnIBazaar Hackathon App</h3>
+          <p>A marketplace for Ethiopian Universities, created during a GDG hackathon.</p>
+        </div>
+      </div>
+    </section>
 
-      <section class="task-list">
-        <ul>
-          <li>
-            <span>Complete wireframe in Figma</span>
-            <button class="complete">✔</button>
-            <button class="delete">🗑️</button>
-          </li>
-          <li class="done">
-            <span>Submit index.html to GitHub</span>
-            <button class="complete">✔</button>
-            <button class="delete">🗑️</button>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <!-- Blog Section -->
+    <section class="card blog">
+      <h2>Blog</h2>
+      <h3>How ALX Changed My Front-End Skills</h3>
+      <p>
+        Joining ALX pushed me to write better, cleaner code and build real-world websites with confidence.
+        From version control to responsive layouts, I've grown a lot.
+      </p>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Hermela Mulugeta Jemema | Built with 💙 using HTML & CSS</p>
-    </footer>
-    
+    <!-- Contact Section -->
+    <section class="card contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
   </div>
 </body>
 </html>
