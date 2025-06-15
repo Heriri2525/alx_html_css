@@ -9,19 +9,31 @@
 </head>
 <body>
   <div class="container">
-    <header class="header">
-      <img src="your-profile-image.jpg" alt="Hermela Mulugeta" class="profile-pic" />
-      <div class="contact-info">
-        <h1>Hermela's Todo List</h1>
-        <p>📞 +251901209318</p>
-        <p>📧 heriri2525@gmail.com</p>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="header-content">
+        <img src="hermela.jpg" alt="Hermela Mulugeta" class="profile-pic" />
+        <div class="contact-info">
+          <h1>Hermela's Todo List</h1>
+          <p>Frontend Developer & UI Designer</p>
+          <p>📞 +251901209318 | 📧 heriri2525@gmail.com</p>
+        </div>
       </div>
     </header>
 
-    <main class="todo-app">
+    <!-- Banner -->
+    <section class="banner">
+      <h2>Organize your day efficiently</h2>
+      <p>Track your tasks, mark them complete, and stay productive!</p>
+      <a href="#tasks" class="cta-button">Start Now</a>
+    </section>
+
+    <!-- Main Todo App -->
+    <main class="todo-app" id="tasks">
       <section class="task-input">
-        <input type="text" placeholder="Add a new task..." />
-        <button>Add</button>
+        <input type="text" placeholder="Add a new task..." aria-label="New task" />
+        <button class="add-btn">Add</button>
       </section>
 
       <section class="task-list">
@@ -40,9 +52,11 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p>&copy; 2025 Hermela Mulugeta Jemema</p>
+      <p>&copy; 2025 Hermela Mulugeta Jemema | Built with 💙 using HTML & CSS</p>
     </footer>
+    
   </div>
 </body>
 </html>
