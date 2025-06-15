@@ -62,6 +62,31 @@ body {
   margin-top: 10px;
 }
 
+/* Quote Section */
+.quote-section {
+  background-color: #e7f3f8;
+  border-left: 6px solid #007acc;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+  color: #333;
+}
+
+.quote-section blockquote {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.quote-section cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #007acc;
+  text-align: right;
+  font-style: normal;
+}
+
 /* Contact */
 .contact form {
   display: flex;
