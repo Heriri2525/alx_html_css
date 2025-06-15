@@ -34,3 +34,11 @@ aside {
   overflow-y: auto;
   padding: 10px;
 }
+.logo {
+  font-size: 2em; /* bigger font size */
+  padding-right: 15px;
+  color: #007acc; /* nice color */
+  font-weight: bold;
+  user-select: none; /* prevents selecting */
+}
+
