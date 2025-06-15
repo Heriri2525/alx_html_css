@@ -76,6 +76,40 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="card faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What programming languages do you specialize in?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer" hidden>
+          I mainly work with JavaScript, Python, and PHP, focusing on front-end frameworks like React and backend with Django.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How can I contact you for a project?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer" hidden>
+          You can use the contact form below or email me directly at <a href="mailto:heriri2525@gmail.com">heriri2525@gmail.com</a>.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer mentorship or tutoring?
+          <span class="arrow">▼</span>
+        </button>
+        <div class="faq-answer" hidden>
+          Yes! I offer monthly 1:1 mentoring sessions through my Premium membership plan.
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="card contact">
       <h2>Contact</h2>
@@ -92,5 +126,20 @@
     </footer>
     
   </div>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !expanded);
+        const answer = button.nextElementSibling;
+        if (!expanded) {
+          answer.removeAttribute('hidden');
+        } else {
+          answer.setAttribute('hidden', '');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
