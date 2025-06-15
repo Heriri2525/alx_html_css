@@ -1,5 +1,79 @@
+/* GENERAL */
 body {
+  margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f9f9f9;
   color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.main-header {
+  background-color: #ffffff;
+  padding: 40px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+.intro-text h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #007bff;
+}
+
+.intro-text p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* BANNER / HERO */
+.banner {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #007bff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f2f2f2;
 }
