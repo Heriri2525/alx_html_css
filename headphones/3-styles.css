@@ -1,0 +1,129 @@
+/* Reset and base styles */
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* What We Do Section */
+#what-we-do {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon-box {
+    flex: 1 1 250px;
+    max-width: 250px;
+    margin: 10px;
+}
+
+.icon-box i {
+    font-size: 48px;
+    color: #FF6565;
+    margin-bottom: 15px;
+}
+
+.icon-box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.icon-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Our Results Section */
+#our-results {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#our-results h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.results-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.result-box {
+    flex: 1 1 200px;
+    max-width: 200px;
+    background-color: #FF6565;
+    color: white;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(255,101,101,0.4);
+}
+
+.result-box h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.result-box p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsive for mobile */
+@media screen and (max-width: 480px) {
+    .icons-container, .results-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-box, .result-box {
+        max-width: 90%;
+        margin: 15px 0;
+    }
+}
