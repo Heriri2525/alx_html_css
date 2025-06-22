@@ -1,0 +1,150 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* What We Do */
+.icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.icon-box {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.scale-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Our Results */
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  text-align: center;
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background-color: #ff6565;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.pentagon:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+/* Footer */
+#site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+#site-footer nav a {
+  color: #ff6565;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+#site-footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .icons-container,
+  .results-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .pentagon {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+}
