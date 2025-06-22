@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #FF6565;
+    --background-color: #1D1D1D;
+    --text-color: #FFFFFF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--main-color);
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.hero-text button:hover {
+    opacity: 0.9;
+}
+
+/* What we do section */
+.what-we-do {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service .icon {
+    font-size: 40px;
+    color: var(--main-color);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
