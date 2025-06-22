@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:active {
+  color: #FF6565;
+}
+
+/* Hero Section */
+.hero {
+  background: #FF6565;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: #fff;
+  color: #FF6565;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.hero button:hover,
+.hero button:active {
+  opacity: 0.9;
+}
+
+/* What We Do */
+.what-we-do {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.feature {
+  max-width: 200px;
+}
+
+/* Our Results Section */
+#our-results {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#our-results h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+#our-results p {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.pentagons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background-color: #FF6565;
+  clip-path: polygon(50% 0%, 90% 35%, 75% 100%, 25% 100%, 10% 35%);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.pentagon:hover {
+  background-color: #ff4040;
+}
+
+/* Contact Section */
+.contact-us {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-us input,
+.contact-us textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-us button {
+  padding: 10px;
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-us button:hover,
+.contact-us button:active {
+  opacity: 0.9;
+}
+
+/* Footer */
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pentagons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
